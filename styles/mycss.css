@@ -1,0 +1,262 @@
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+
+.port-background {
+    position: relative;
+    width: 100%;
+    background-image: url(../public/banner-bg.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.space-man-lottie {
+    width: 100%;
+    /* position: absolute;
+    right: 0;
+    bottom: 0; */
+}
+
+.port-background nav .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.port-background nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-top: 20px;
+    background-color: #ffffff05;
+}
+
+.port-background nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 0px;
+}
+
+.port-background nav .tabs {
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.port-background nav .tabs li {
+    cursor: pointer;
+    
+}
+.port-background nav .tabs li a {
+    color: white;
+}
+
+.port-background nav .tabs li a:hover {
+    color: rgb(131, 0, 253);
+}
+
+.port-background nav .socials {
+    margin-right: 50px;
+}
+
+.port-background nav .socials ul {
+    gap: 8px;
+}
+
+.port-background nav .socials li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid white;
+    background-color: rgba(128, 128, 128, 0.301);
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.port-background nav .action-btn button {
+    border: 1px solid white;
+    margin: auto;
+    color: white;
+    padding: 10px 30px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.port-background nav .socials .linked:hover {
+    color: #0073b2;
+    border-color: #0073b2;
+}
+
+.port-background nav .socials .facebook:hover {
+    color: #0464e2;
+    border-color: #0464e2;
+}
+
+.port-background nav .socials .insta:hover {
+    color: #fa7f22;
+    border-color: #fa7f22;
+}
+
+.port-background nav .action-btn button:hover {
+    color: rgb(96 183 249);
+    border-color: rgb(96 183 249);
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+.port-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.port-intro .intro-title {
+    background: linear-gradient(90deg, rgba(250, 0, 221, 0.137) 0%, rgba(31, 0, 82, 0.034) 150%);
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.port-intro .intro-title:hover {
+    background: linear-gradient(90deg, rgba(250, 0, 221, 0.034) 0%, rgba(31, 0, 82, 0) 150%);
+}
+
+.port-intro .cont{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.port-intro h1 {
+    margin-bottom: 10px;
+}
+
+.port-intro .connect-row {
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.port-intro .connect-row:hover {
+    color: rgb(96 183 249);
+}
+
+.port-intro .col {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+
+.typewriter h3 {
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    width: 0;
+    max-width: max-content;
+    overflow: hidden;
+    border-right: .05em solid #464545;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 12px 0px;
+    font-size: 25px;
+    /* Gives that scrolling effect as the typing happens */
+}
+
+.typing-erase {
+    animation:
+        3s typing-erase 0.2s steps(50, end) infinite,
+        blink-caret .5s step-end infinite;
+}
+
+/* The type and erase effect */
+@keyframes typing-erase {
+    0% {
+        width: 0
+    }
+
+    80% {
+        width: 100%
+    }
+
+    90%,
+    100% {
+        width: 0
+    }
+}
+
+/* T */
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: gray
+    }
+}
+
+
+
+/* media querry  */
+
+@media only screen and (max-width: 720px) {
+
+    .port-intro {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    .port-intro .col {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .port-background .navbar-brand {
+        width: 80%;
+    }
+}
