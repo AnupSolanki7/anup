@@ -13,7 +13,6 @@ h6 {
 
 
 .port-background {
-    position: relative;
     width: 100%;
     background-image: url(../public/banner-bg.png);
     height: 100vh;
@@ -26,6 +25,10 @@ h6 {
     /* position: absolute;
     right: 0;
     bottom: 0; */
+}
+
+nav{
+background-image: url(../public//footer-bg.png);
 }
 
  nav .links {
@@ -200,6 +203,19 @@ h6 {
         blink-caret .5s step-end infinite;
 }
 
+.skills{
+    background-image: url(../public//footer-bg.png);
+    height: 100vh;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
 /* The type and erase effect */
 @keyframes typing-erase {
     0% {
@@ -257,6 +273,10 @@ h6 {
 @media only screen and (max-width: 400px) {
 
     .port-background .navbar-brand {
+        width: 80%;
+    }
+
+    .navbar-brand{
         width: 80%;
     }
 }
