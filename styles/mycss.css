@@ -28,13 +28,13 @@ h6 {
     bottom: 0; */
 }
 
-.port-background nav .links {
+ nav .links {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.port-background nav {
+ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +43,7 @@ h6 {
     background-color: #ffffff05;
 }
 
-.port-background nav ul {
+ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -52,33 +52,33 @@ h6 {
     margin: 0px;
 }
 
-.port-background nav .tabs {
+ nav .tabs {
     margin-right: 20px;
     font-size: 20px;
     font-weight: 300;
 }
 
-.port-background nav .tabs li {
+ nav .tabs li {
     cursor: pointer;
     
 }
-.port-background nav .tabs li a {
+ nav .tabs li a {
     color: white;
 }
 
-.port-background nav .tabs li a:hover {
+ nav .tabs li a:hover {
     color: rgb(131, 0, 253);
 }
 
-.port-background nav .socials {
+ nav .socials {
     margin-right: 50px;
 }
 
-.port-background nav .socials ul {
+ nav .socials ul {
     gap: 8px;
 }
 
-.port-background nav .socials li {
+ nav .socials li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,7 +91,7 @@ h6 {
     cursor: pointer;
 }
 
-.port-background nav .action-btn button {
+ nav .action-btn button {
     border: 1px solid white;
     margin: auto;
     color: white;
@@ -100,22 +100,22 @@ h6 {
     cursor: pointer;
 }
 
-.port-background nav .socials .linked:hover {
+ nav .socials .linked:hover {
     color: #0073b2;
     border-color: #0073b2;
 }
 
-.port-background nav .socials .facebook:hover {
+ nav .socials .facebook:hover {
     color: #0464e2;
     border-color: #0464e2;
 }
 
-.port-background nav .socials .insta:hover {
+ nav .socials .insta:hover {
     color: #fa7f22;
     border-color: #fa7f22;
 }
 
-.port-background nav .action-btn button:hover {
+ nav .action-btn button:hover {
     color: rgb(96 183 249);
     border-color: rgb(96 183 249);
 }
