@@ -6,270 +6,294 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0px;
-  font-family: "Poppins", sans-serif;
-  text-decoration: none;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
+
 .port-background {
-  width: 100%;
-  background-image: url(../public/banner-bg.png);
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
+    width: 100%;
+    background-image: url(../public/banner-bg.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .space-man-lottie {
-  width: 100%;
-  /* position: absolute;
+    width: 100%;
+    /* position: absolute;
     right: 0;
     bottom: 0; */
 }
 
-nav {
-  position: relative;
-  top: 10% !important;
-  padding: 0px !important;
-  height: 0;
-  /* background-image: url(../public//footer-bg.png); */
+nav{
+    position: relative;
+background-image: url(../public//footer-bg.png);
 }
 
-nav .links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+ nav .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  padding-top: 20px;
-  background-color: #ffffff05;
+ nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-top: 20px;
+    background-color: #ffffff05;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-  margin: 0px;
+ nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 0px;
 }
 
-nav .tabs {
-  margin-right: 20px;
-  font-size: 20px;
-  font-weight: 300;
+ nav .tabs {
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 300;
 }
 
-nav .tabs li {
-  cursor: pointer;
+ nav .tabs li {
+    cursor: pointer;
+    
 }
-nav .tabs li a {
-  color: white;
-}
-
-nav .tabs li a:hover {
-  color: rgb(131, 0, 253);
+ nav .tabs li a {
+    color: white;
 }
 
-nav .socials {
-  margin-right: 50px;
+ nav .tabs li a:hover {
+    color: rgb(131, 0, 253);
 }
 
-nav .socials ul {
-  gap: 8px;
+ nav .socials {
+    margin-right: 50px;
 }
 
-nav .socials li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0.5px solid white;
-  background-color: rgba(128, 128, 128, 0.301);
-  font-size: 20px;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  cursor: pointer;
+ nav .socials ul {
+    gap: 8px;
 }
 
-nav .action-btn button {
-  border: 1px solid white;
-  margin: auto;
-  color: white;
-  padding: 10px 30px;
-  background-color: transparent;
-  cursor: pointer;
+ nav .socials li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid white;
+    background-color: rgba(128, 128, 128, 0.301);
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
-nav .socials .linked:hover {
-  color: #0073b2;
-  border-color: #0073b2;
+ nav .action-btn button {
+    border: 1px solid white;
+    margin: auto;
+    color: white;
+    padding: 10px 30px;
+    background-color: transparent;
+    cursor: pointer;
 }
 
-nav .socials .facebook:hover {
-  color: #0464e2;
-  border-color: #0464e2;
+ nav .socials .linked:hover {
+    color: #0073b2;
+    border-color: #0073b2;
 }
 
-nav .socials .insta:hover {
-  color: #fa7f22;
-  border-color: #fa7f22;
+ nav .socials .facebook:hover {
+    color: #0464e2;
+    border-color: #0464e2;
 }
 
-nav .action-btn button:hover {
-  color: rgb(96 183 249);
-  border-color: rgb(96 183 249);
+ nav .socials .insta:hover {
+    color: #fa7f22;
+    border-color: #fa7f22;
+}
+
+ nav .action-btn button:hover {
+    color: rgb(96 183 249);
+    border-color: rgb(96 183 249);
 }
 
 .navbar-toggler {
-  border-color: white;
+    border-color: white;
 }
 
 .navbar-toggler-icon {
-  filter: invert(1);
+    filter: invert(1);
 }
 
+
 .port-intro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row-reverse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
 }
 
 .port-intro .intro-title {
-  background: linear-gradient(
-    90deg,
-    rgba(250, 0, 221, 0.137) 0%,
-    rgba(31, 0, 82, 0.034) 150%
-  );
-  border: 1px solid white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  cursor: pointer;
-  margin-bottom: 10px;
+    background: linear-gradient(90deg, rgba(250, 0, 221, 0.137) 0%, rgba(31, 0, 82, 0.034) 150%);
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .port-intro .intro-title:hover {
-  background: linear-gradient(
-    90deg,
-    rgba(250, 0, 221, 0.034) 0%,
-    rgba(31, 0, 82, 0) 150%
-  );
+    background: linear-gradient(90deg, rgba(250, 0, 221, 0.034) 0%, rgba(31, 0, 82, 0) 150%);
 }
 
-.port-intro .cont {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+.port-intro .cont{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .port-intro h1 {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .port-intro .connect-row {
-  margin-top: 30px;
-  cursor: pointer;
+    margin-top: 30px;
+    cursor: pointer;
 }
 
 .port-intro .connect-row:hover {
-  color: rgb(96 183 249);
+    color: rgb(96 183 249);
 }
 
 .port-intro .col {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
 }
 
+
 .typewriter h3 {
-  color: white;
-  font-size: 1.5em;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  width: 0;
-  max-width: max-content;
-  overflow: hidden;
-  border-right: 0.05em solid #464545;
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 12px 0px;
-  font-size: 25px;
-  /* Gives that scrolling effect as the typing happens */
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    width: 0;
+    max-width: max-content;
+    overflow: hidden;
+    border-right: .05em solid #464545;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 12px 0px;
+    font-size: 25px;
+    /* Gives that scrolling effect as the typing happens */
 }
 
 .typing-erase {
-  animation: 3s typing-erase 0.2s steps(50, end) infinite,
-    blink-caret 0.5s step-end infinite;
+    animation:
+        3s typing-erase 0.2s steps(50, end) infinite,
+        blink-caret .5s step-end infinite;
 }
 
-.skills {
-  background-image: url(../public//footer-bg.png);
-  height: 100vh;
-  background-size: cover;
+.skills{
+    position: relative;
+    background-image: url(../public//footer-bg.png);
+    height: 100vh;
+    background-size: cover;
 }
+
+.skills .black-container{
+    position: absolute;
+    top: -10%;
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    color: white;
+    border-radius: 25px;
+    padding: 25px 50px;
+    background-color: black;
+}
+
+
+
+
+
+
+
 
 /* The type and erase effect */
 @keyframes typing-erase {
-  0% {
-    width: 0;
-  }
+    0% {
+        width: 0
+    }
 
-  80% {
-    width: 100%;
-  }
+    80% {
+        width: 100%
+    }
 
-  90%,
-  100% {
-    width: 0;
-  }
+    90%,
+    100% {
+        width: 0
+    }
 }
 
 /* T */
 
 @keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
 
-  50% {
-    border-color: gray;
-  }
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: gray
+    }
 }
+
+
 
 /* media querry  */
 
 @media only screen and (max-width: 720px) {
-  .port-intro {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .port-intro .col {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 50%;
-    justify-content: center;
-    align-items: center;
-  }
+    .port-intro {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    .port-intro .col {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media only screen and (max-width: 400px) {
-  .port-background .navbar-brand {
-    width: 80%;
-  }
 
-  .navbar-brand {
-    width: 80%;
-  }
+    .port-background .navbar-brand {
+        width: 80%;
+    }
+
+    .navbar-brand{
+        width: 80%;
+    }
 }

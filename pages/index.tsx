@@ -65,6 +65,15 @@ export default function Home() {
         </div>
       </section>
       <section className="skills">
+        <div className="container">
+          <div className="black-container">
+            <h1>Skills</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta consectetur laudantium ipsam voluptates! Ratione, tempore cumque. Fuga, atque labore quisquam recusandae amet doloribus quis cumque!</p>
+            <div>
+              caraousel
+            </div>
+          </div>
+        </div>
 
       </section>
     </>
