@@ -5,8 +5,6 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import { useEffect, useState } from "react";
 
 const Header = () => {
-    
-
   return (
     <Navbar expand="lg" sticky="top">
       <Container>
