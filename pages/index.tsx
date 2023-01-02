@@ -42,9 +42,8 @@ export default function Home() {
               </div>
               <div className="row">
                 <div className="cont">
-                  <h3>Hi! my Name is Anup.</h3>
                   <div className="typewriter">
-                    <h3 className="typing-erase">Web Developer!</h3>
+                    <h3 className="typing-erase">Hi! my Name is Anup. Web Developer!</h3>
                   </div>
                 </div>
               </div>
