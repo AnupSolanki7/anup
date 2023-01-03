@@ -120,7 +120,7 @@ const Contact = () => {
                           }
                         />
                       </Col>
-                      <Col size={12} className="px-1">
+                      <Col size={12} className="px-1 contact-send">
                         <textarea
                           rows={6}
                           value={formDetails.message}

@@ -15,7 +15,7 @@ const Banner = () => {
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const [index, setIndex] = useState(1);
     const toRotate = [ "Web Developer", "React Js Dev", "FrontEnd Dev" ];
-    const period = 500;
+    const period = 400;
   
     useEffect(() => {
       let ticker = setInterval(() => {
@@ -44,7 +44,7 @@ const Banner = () => {
         setIsDeleting(false);
         setLoopNum(loopNum + 1);
         setIndex(1);
-        setDelta(500);
+        setDelta(200);
       } else {
         setIndex(prevIndex => prevIndex + 1);
       }

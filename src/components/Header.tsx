@@ -71,13 +71,13 @@ const Header = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/anup-solanki-4262b9162" target='_blank' rel="noreferrer">
               <Image alt="" src={navIcon1} />
               </a>
-              <a href="#">
-              <Image alt="" src={navIcon2} />
+              <a href="https://github.com/AnupSolanki7" target='_blank' rel="noreferrer">
+              <Image className="git-icon" alt="" src={navIcon2} />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/anupsolanki7/"  target='_blank' rel="noreferrer">
               <Image alt="" src={navIcon3} />
               </a>
             </div>
