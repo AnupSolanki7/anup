@@ -97,6 +97,7 @@ nav.navbar.scrolled {
   background-color: #121212;
 }
 
+
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
@@ -617,3 +618,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 20px;
 }
 
+@media only screen and (max-width: 720px) {
+  nav.navbar .navbar-brand{
+  width: 80%;
+  }
+
+  .navbar-nav{
+    text-align: center;
+  }
+  .navbar-nav a{
+    font-size: 25px;
+  }
+
+  .navbar-text{
+    flex-direction: column;
+  }
+
+  .navbar-text .social-icon{
+    margin: 15px 0px;
+  }
+  
+  .aligh-items-center{
+    flex-direction: column-reverse;
+  }
+}
