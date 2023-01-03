@@ -6,7 +6,7 @@ const SpaceMan = () => {
   return (
     <div>
       <Lottie
-      className="space-man-lottie"
+      className="animate__animated animate__zoomIn"
         animationData={Spaceman}
         loop
         autoplay

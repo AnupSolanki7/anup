@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import TrackVisibility from 'react-on-screen';
 import { useEffect, useState } from "react";
+import SpaceMan from "../src/components/SpaceMan";
 
 
 export default function Home() {
@@ -13,8 +14,8 @@ export default function Home() {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
-  const period = 200;
+  const toRotate = [ "Web Developer", "React Js Dev", "FrontEnd Dev" ];
+  const period = 500;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -43,7 +44,7 @@ export default function Home() {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(50);
+      setDelta(500);
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
@@ -67,9 +68,10 @@ export default function Home() {
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <Image src={headerImg} alt="Header Img" />
-                </div>}
+                // <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                //   <Image src={headerImg} alt="Header Img" />
+                // </div>
+                <SpaceMan />} 
             </TrackVisibility>
           </Col>
         </Row>
