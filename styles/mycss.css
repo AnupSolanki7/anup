@@ -361,6 +361,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+.react-multi-carousel-track{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+} 
+
+.react-multiple-carousel__arrow{
+  background: rgb(135 135 135 / 50%) !important;
+}
+
+.react-multiple-carousel__arrow--left {
+  left: calc(4% + -5px) !important;
+}
+
+
+
+.react-multiple-carousel__arrow--right{
+  right: calc(4% + -5px) !important;
+}
+
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
