@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import Image from 'next/image';
+import Image from "next/image";
 import Logo from "../../public/AnupSolanki.svg";
 import navIcon1 from "../../public/nav-icon1.svg";
 import navIcon2 from "../../public/nav-icon2.svg";
@@ -71,19 +71,33 @@ const Header = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/anup-solanki-4262b9162" target='_blank' rel="noreferrer">
-              <Image alt="" src={navIcon1} />
+              <a
+                href="https://www.linkedin.com/in/anup-solanki-4262b9162"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Image alt="" src={navIcon1} />
               </a>
-              <a href="https://github.com/AnupSolanki7" target='_blank' rel="noreferrer">
-              <Image className="git-icon" alt="" src={navIcon2} />
+              <a
+                href="https://github.com/AnupSolanki7"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Image className="git-icon" alt="" src={navIcon2} />
               </a>
-              <a href="https://www.instagram.com/anupsolanki7/"  target='_blank' rel="noreferrer">
-              <Image alt="" src={navIcon3} />
+              <a
+                href="https://www.instagram.com/anupsolanki7/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Image alt="" src={navIcon3} />
               </a>
             </div>
+            <a href="#contactUs">
               <button className="vvd">
                 <span>Let’s Connect</span>
               </button>
+            </a>
           </span>
         </Navbar.Collapse>
       </Container>

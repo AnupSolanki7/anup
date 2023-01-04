@@ -661,6 +661,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     flex-direction: column;
   }
 
+  .navbar-text button{
+    margin-left: 0px;
+    padding: 18px 70px;
+  }
+
   .navbar-text .social-icon {
     margin: 15px 0px;
   }
