@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import Image from 'next/image';
+import Image from "next/image";
 import meter1 from "../../public/react-js-icon.svg";
 import meter2 from "../../public/next.svg";
 import meter3 from "../../public/javascript.svg";
@@ -15,6 +15,7 @@ import "react-multi-carousel/lib/styles.css";
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../../public/color-sharp.png";
+import { TypeAnimation } from "react-type-animation";
 
 const Skills = () => {
   const responsive = {
@@ -43,7 +44,19 @@ const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>Skills</h2>
+              <h2>
+                <TypeAnimation
+                  sequence={[
+                    "Skills",
+                    1500,
+                    "",
+                  ]}
+                  speed={40}
+                  deletionSpeed={40}
+                  wrapper="h2"
+                  repeat={Infinity}
+                />
+              </h2>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.<br></br> Lorem Ipsum has been the industry's standard
