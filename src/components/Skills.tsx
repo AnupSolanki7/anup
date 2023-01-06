@@ -44,7 +44,7 @@ const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>
+              
                 <TypeAnimation
                   sequence={[
                     "Skills",
@@ -56,7 +56,7 @@ const Skills = () => {
                   wrapper="h2"
                   repeat={Infinity}
                 />
-              </h2>
+              
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.<br></br> Lorem Ipsum has been the industry's standard

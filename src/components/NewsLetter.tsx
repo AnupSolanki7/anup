@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Col, Row, Alert } from "react-bootstrap";
 
@@ -37,12 +38,12 @@ const NewsLetter = ({ status, message, onValidated }: any) => {
             <form onSubmit={handleSubmit}>
               <div className="new-email-bx">
                 <input
-                  value={email}
                   type="email"
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Email Address"
+                  defaultValue={"Get my Résumé from here...."}
+                  disabled
                 />
-                <button type="submit">Submit</button>
+                <Link target={'_blank'} href="https://drive.google.com/file/d/1Sd7wSfZMv5Wy-sMITC60-KDF3HU6K4Z3/view?usp=share_link">Résumé (PDF) </Link>
               </div>
             </form>
           </Col>

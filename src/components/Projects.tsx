@@ -56,7 +56,7 @@ const Projects = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2><TypeAnimation
+                  <TypeAnimation
                   sequence={[
                     "Projects",
                     1500,
@@ -66,7 +66,7 @@ const Projects = () => {
                   deletionSpeed={40}
                   wrapper="h2"
                   repeat={Infinity}
-                /></h2>
+                />
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's

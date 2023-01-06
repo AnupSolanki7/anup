@@ -105,7 +105,7 @@ const Contact = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>
+                  
                     <TypeAnimation
                       sequence={["Get In Touch", 1500, ""]}
                       speed={40}
@@ -113,7 +113,7 @@ const Contact = () => {
                       wrapper="h2"
                       repeat={Infinity}
                     />
-                  </h2>
+                  
                   <form ref={form} onSubmit={handleSubmit}>
                     <Row>
                       <Col size={12} sm={6} className="px-1">
