@@ -8,6 +8,7 @@ import projImg3 from "../../public/project-img3.png";
 import colorSharp2 from "../../public/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
 import ProjectCard from "./ProjectCard";
+import { TypeAnimation } from "react-type-animation";
 
 const Projects = () => {
   const projects = [
@@ -55,7 +56,17 @@ const Projects = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>Projects</h2>
+                  <h2><TypeAnimation
+                  sequence={[
+                    "Projects",
+                    1500,
+                    "",
+                  ]}
+                  speed={40}
+                  deletionSpeed={40}
+                  wrapper="h2"
+                  repeat={Infinity}
+                /></h2>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's

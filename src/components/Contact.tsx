@@ -5,6 +5,7 @@ import contactImg from "../../public/contact.svg";
 import Image from "next/image";
 import emailjs from "@emailjs/browser";
 import TrackVisibility from "react-on-screen";
+import { TypeAnimation } from "react-type-animation";
 
 const Contact = () => {
   const form: any = useRef();
@@ -61,7 +62,10 @@ const Contact = () => {
             console.log(result);
 
             if (result.status == 200) {
-              setStatus({ success: true, message: "Message sent successfully" });
+              setStatus({
+                success: true,
+                message: "Message sent successfully",
+              });
             } else {
               setStatus({
                 success: false,
@@ -101,7 +105,15 @@ const Contact = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>Get In Touch</h2>
+                  <h2>
+                    <TypeAnimation
+                      sequence={["Get In Touch", 1500, ""]}
+                      speed={40}
+                      deletionSpeed={40}
+                      wrapper="h2"
+                      repeat={Infinity}
+                    />
+                  </h2>
                   <form ref={form} onSubmit={handleSubmit}>
                     <Row>
                       <Col size={12} sm={6} className="px-1">
@@ -115,7 +127,13 @@ const Contact = () => {
                           }
                         />
                       </Col>
-                      <Col style={{display:'none'}} display={'none'} size={12} sm={6} className="px-1">
+                      <Col
+                        style={{ display: "none" }}
+                        display={"none"}
+                        size={12}
+                        sm={6}
+                        className="px-1"
+                      >
                         <input
                           type="text"
                           value={formDetails.lastName}
@@ -138,7 +156,12 @@ const Contact = () => {
                           }
                         />
                       </Col>
-                      <Col style={{display:'none'}} size={12} sm={6} className="px-1">
+                      <Col
+                        style={{ display: "none" }}
+                        size={12}
+                        sm={6}
+                        className="px-1"
+                      >
                         <input
                           type="tel"
                           value={formDetails.phone}
@@ -176,7 +199,10 @@ const Contact = () => {
                             style={{
                               marginTop: "10px",
                               textAlign: "center",
-                              background: status?.success === true ? "transparent linear-gradient(180deg, #4CD964 0%, #26AD5F 100%) 0% 0% no-repeat padding-box" : "transparent linear-gradient(180deg, #e72c2c 0%, #7e0000 100%) 0% 0% no-repeat padding-box" ,
+                              background:
+                                status?.success === true
+                                  ? "transparent linear-gradient(180deg, #4CD964 0%, #26AD5F 100%) 0% 0% no-repeat padding-box"
+                                  : "transparent linear-gradient(180deg, #e72c2c 0%, #7e0000 100%) 0% 0% no-repeat padding-box",
                               padding: "5px",
                               width: "45%",
                               textShadow: "0px 4px 3px #00000029",

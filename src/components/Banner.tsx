@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../public/header-img.svg";
+import headerImg from "../../public/header-img.svg";
 import Image from 'next/image';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import TrackVisibility from 'react-on-screen';
@@ -72,7 +72,8 @@ const Banner = () => {
                   // <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
                   //   <Image src={headerImg} alt="Header Img" />
                   // </div>
-                  <SpaceMan />} 
+                  <SpaceMan />
+                  } 
               </TrackVisibility>
             </Col>
           </Row>
