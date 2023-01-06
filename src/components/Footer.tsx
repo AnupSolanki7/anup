@@ -14,7 +14,8 @@ const Footer = () => {
             <Row className="align-items-center">
               <MailChipForm/>
               <Col className="foot-logo" size={12} sm={6}>
-                <Image  src={logo} alt="Logo" />
+                S A Y &nbsp; H E L L O! <br />
+                anupsolanki7@gmail.com
               </Col>
               <Col size={12} sm={6} className="text-center text-sm-end">
                 <div className="social-icon">

@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../../public/contact-img.svg";
+import contactImg from "../../public/contact.svg";
 import Image from "next/image";
 import emailjs from "@emailjs/browser";
 import TrackVisibility from "react-on-screen";
@@ -120,7 +120,7 @@ const Contact = () => {
                           }
                         />
                       </Col>
-                      <Col size={12} sm={6} className="px-1">
+                      <Col style={{display:'none'}} display={'none'} size={12} sm={6} className="px-1">
                         <input
                           type="text"
                           value={formDetails.lastName}
@@ -143,7 +143,7 @@ const Contact = () => {
                           }
                         />
                       </Col>
-                      <Col size={12} sm={6} className="px-1">
+                      <Col style={{display:'none'}} size={12} sm={6} className="px-1">
                         <input
                           type="tel"
                           value={formDetails.phone}
