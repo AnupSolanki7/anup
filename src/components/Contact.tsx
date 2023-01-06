@@ -29,49 +29,51 @@ const Contact = () => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
     console.log(form.current);
-    if(formDetails !== formInitialDetails && formDetails.email !== ''){
+    if (formDetails !== formInitialDetails && formDetails.email !== "") {
       setButtonText("Sending...");
-    emailjs
-      .sendForm(
-        "service_u0qm1l4",
-        "template_a1lxt3q",
-        form.current,
-        "BGtkriYE2BHIV8DJk"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-
-    emailjs
-      .sendForm(
-        "service_u0qm1l4",
-        "template_3fjxwfz",
-        form.current,
-        "BGtkriYE2BHIV8DJk"
-      )
-      .then(
-        (result: any) => {
-          setButtonText("Send");
-          setFormDetails(formInitialDetails);
-
-          if (result.code == 200) {
-            setStatus({ succes: true, message: "Message sent successfully" });
-          } else {
-            setStatus({
-              succes: false,
-              message: "Something went wrong, please try again later.",
-            });
+      emailjs
+        .sendForm(
+          "service_u0qm1l4",
+          "template_a1lxt3q",
+          form.current,
+          "BGtkriYE2BHIV8DJk"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
           }
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );}
+        );
+
+      emailjs
+        .sendForm(
+          "service_u0qm1l4",
+          "template_3fjxwfz",
+          form.current,
+          "BGtkriYE2BHIV8DJk"
+        )
+        .then(
+          (result: any) => {
+            setButtonText("Send");
+            setFormDetails(formInitialDetails);
+            console.log(result);
+
+            if (result.status == 200) {
+              setStatus({ success: true, message: "Message sent successfully" });
+            } else {
+              setStatus({
+                success: false,
+                message: "Something went wrong, please try again later.",
+              });
+            }
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
   };
 
   return (
@@ -81,13 +83,6 @@ const Contact = () => {
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) => (
-                // <img
-                //   className={
-                //     isVisible ? "animate__animated animate__zoomIn" : ""
-                //   }
-                //   src={contactImg}
-                //   alt="Contact Us"
-                // />
                 <Image
                   className={
                     isVisible ? "animate__animated animate__zoomIn" : ""
@@ -169,11 +164,25 @@ const Contact = () => {
                         </button>
                       </Col>
                       {status?.message && (
-                        <Col size={12}>
+                        <Col
+                          style={{
+                            flex: "none",
+                            display: "flex",
+                            justifyContent: "center",
+                          }}
+                          size={12}
+                        >
                           <p
-                            className={
-                              status?.success === false ? "danger" : "success"
-                            }
+                            style={{
+                              marginTop: "10px",
+                              textAlign: "center",
+                              background: status?.success === true ? "transparent linear-gradient(180deg, #4CD964 0%, #26AD5F 100%) 0% 0% no-repeat padding-box" : "transparent linear-gradient(180deg, #e72c2c 0%, #7e0000 100%) 0% 0% no-repeat padding-box" ,
+                              padding: "5px",
+                              width: "45%",
+                              textShadow: "0px 4px 3px #00000029",
+                              borderRadius: "5px",
+                              color: "white",
+                            }}
                           >
                             {status?.message}
                           </p>

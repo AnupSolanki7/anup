@@ -9,6 +9,7 @@ import css from "../../public/css.svg";
 import bootstrap from "../../public/bootstrap.svg";
 import antd from "../../public/antd.svg";
 import mui from "../../public/mui.svg";
+import redux from "../../public/redux.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import arrow1 from "../assets/img/arrow1.svg";
@@ -86,6 +87,10 @@ const Skills = () => {
                 <div className="item">
                   <Image src={antd} alt="Image" />
                   <h5>Antd</h5>
+                </div>
+                <div className="item">
+                  <Image src={redux} alt="Image" />
+                  <h5>Redux</h5>
                 </div>
               </Carousel>
             </div>
