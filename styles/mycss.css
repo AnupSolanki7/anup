@@ -17,6 +17,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Cutive+Mono&family=Hachi+Maru+Pop&family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Cutive&family=Cutive+Mono&family=Hachi+Maru+Pop&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Cutive&family=Cutive+Mono&family=Hachi+Maru+Pop&family=Space+Mono&family=Special+Elite&display=swap');
 
 
 /************ Default Css ************/
@@ -37,7 +38,7 @@ body {
   position: relative;
   background-color: #121212 !important;
   color: #fff !important;
-  font-family: 'Courier Prime', monospace !important;
+  font-family: 'Space Mono', monospace !important;
 }
 
 h1,
@@ -117,11 +118,16 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   padding: 0 25px;
   font-size: 18px;
   opacity: 0.75;
+  transition: all 0.5s ease;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+nav.navbar .navbar-nav a.nav-link.navbar-link.active:hover {
   opacity: 1;
 }
+
+
+
+
 span.navbar-text {
   display: flex;
   align-items: center;
@@ -275,7 +281,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: inline-block;
 }
 .banner h1 {
-  font-size: 65px;
+  font-size: 55px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -303,6 +309,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
+  transform: rotate(45deg);
 }
 .banner button:hover svg {
   margin-left: 25px;
@@ -659,6 +666,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: linear-gradient(90.21deg, #a048ea -5.91%, #4a2fbd 111.58%);
   padding: 20px 65px;
   color: #fff;
+  text-align: center;
   font-weight: 500;
   letter-spacing: 0.5px;
   border-radius: 18px;
@@ -709,7 +717,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 
   .banner h1{
-    height: 80px;
+    height: 150px;
     font-size: 50px;
 
   }

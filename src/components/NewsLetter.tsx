@@ -40,7 +40,7 @@ const NewsLetter = ({ status, message, onValidated }: any) => {
                 <input
                   type="email"
                   onChange={(e) => setEmail(e.target.value)}
-                  defaultValue={"Get my Résumé from here...."}
+                  defaultValue={"Get my Résumé...."}
                   disabled
                 />
                 <Link target={'_blank'} href="https://drive.google.com/file/d/1Sd7wSfZMv5Wy-sMITC60-KDF3HU6K4Z3/view?usp=share_link">Résumé (PDF) </Link>
