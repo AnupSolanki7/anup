@@ -126,8 +126,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active:hover {
 }
 
 
-
-
 span.navbar-text {
   display: flex;
   align-items: center;
@@ -216,6 +214,7 @@ nav.navbar .navbar-toggler:focus {
   outline: none;
   box-shadow: none;
 }
+
 nav.navbar .navbar-toggler-icon {
   width: 24px;
   height: 17px;
@@ -255,6 +254,69 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
+}
+
+.navbar-toggler {
+  border: 0 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+/* Lines of the Toggler */
+.toggler-icon{
+  width: 30px;
+  height: 3px;
+  background: linear-gradient( 90.21deg, rgb(244 114 192) -5.91%, rgb(99 65 249) 111.58% );
+  display: block;
+  transition: all 0.2s;
+}
+
+/* Adds Space between the lines */
+.middle-bar{
+  margin: 5px auto;
+}
+
+/* State when navbar is opened (START) */
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+/* State when navbar is opened (END) */
+
+/* State when navbar is collapsed (START) */
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+/* State when navbar is collapsed (END) */
+
+/* Color of Toggler when collapsed */
+.navbar-toggler.collapsed .toggler-icon {
+  background-color: white;
 }
 
 /************ Banner Css ************/
@@ -310,9 +372,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
   line-height: 1;
   transform: rotate(45deg);
+  color: #F18F43;
 }
 .banner button:hover svg {
   margin-left: 25px;
+  color: #476098;
 }
 .banner img {
   animation: updown 3s linear infinite;
@@ -328,6 +392,79 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     transform: translateY(-20px);
   }
 }
+
+.rainbow-text {
+  /* Create a conic gradient. */
+  /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
+  background: #ca4246;
+  background-color: #CA4246;
+  background: conic-gradient(
+    #CA4246 16.666%, 
+    #E16541 16.666%, 
+    #E16541 33.333%, 
+    #F18F43 33.333%, 
+    #F18F43 50%, 
+    #8B9862 50%, 
+    #8B9862 66.666%, 
+    #476098 66.666%, 
+    #476098 83.333%, 
+    #A7489B 83.333%);
+  
+  /* Set thee background size and repeat properties. */
+  background-size: 57%;
+  background-repeat: repeat;
+  
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  
+  /* Animate the text when loading the element. */
+  /* This animates it on page load and when hovering out. */
+  animation: rainbow-text-animation-rev 0.5s ease forwards;
+
+  cursor: pointer;
+}
+
+/* Add animation on hover. */
+.rainbow-text:hover {
+  animation: rainbow-text-animation 0.5s ease forwards;
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-animation {
+  0% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 300%;
+    background-position: -9em 1em;
+  }
+}
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-animation-rev {
+  0% {
+    background-size: 300%;
+    background-position: -9em 1em;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+}
+
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
@@ -717,9 +854,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 
   .banner h1{
-    height: 150px;
     font-size: 50px;
+  }
 
+  .banner .data-rotate-text{
+    height: 100px;
   }
 
   .banner .text-area{
@@ -751,7 +890,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 @media only screen and (max-width: 420px) {
   .banner h1 {
     font-size: 50px;
-    height: 150px;
+  }
+
+  .banner .data-rotate-text{
+    height: 100px;
   }
 
   .new-email-bx button{

@@ -30,6 +30,7 @@ const Banner = () => {
                   <h1>Hi! I'm Anup </h1>
                     <TypeAnimation
                       // Same String at the start will only be typed once, initially
+                      className="data-rotate-text"
                       sequence={[
                         " FrontEnd Developer",
                         1000,
@@ -51,8 +52,8 @@ const Banner = () => {
                     type specimen book.
                   </p>
                   <a href="#contactUs">
-                    <button>
-                      Let’s Connect <BiRocket size={25} />
+                    <button className="rainbow-text">
+                      Let’s Connect <BiRocket className="rainbow-text" size={25} />
                     </button>
                   </a>
                 </div>

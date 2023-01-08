@@ -36,9 +36,18 @@ const Header = () => {
         <Navbar.Brand href="/">
           <Image alt="" src={Logo} />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
+        {/* <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
-        </Navbar.Toggle>
+        </Navbar.Toggle> */}
+          <Navbar.Toggle
+            aria-controls="basic-navbar-nav"
+            type="button"
+            aria-label="Toggle navigation"
+          >
+            <span className="toggler-icon top-bar"></span>
+            <span className="toggler-icon middle-bar"></span>
+            <span className="toggler-icon bottom-bar"></span>
+          </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link
@@ -95,7 +104,7 @@ const Header = () => {
             </div>
             <a href="#contactUs">
               <button className="vvd">
-                <span>Let’s Connect</span>
+                <span className="rainbow-text">Let’s Connect</span>
               </button>
             </a>
           </span>
