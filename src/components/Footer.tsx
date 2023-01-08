@@ -13,9 +13,9 @@ const Footer = () => {
           <Container>
             <Row className="align-items-center">
               <MailChipForm/>
-              <Col className="foot-logo" size={12} sm={6}>
-                S A Y &nbsp; H E L L O! <br />
-                anupsolanki7@gmail.com
+              <Col className="foot-logo" style={{textAlign: 'center'}} size={12} sm={6}>
+               <span className="rainbow-text" >say Hello! </span> <br />
+               <span className="rainbow-text" >anupsolanki7@gmail.com</span> 
               </Col>
               <Col size={12} sm={6} className="text-center text-sm-end">
                 <div className="social-icon">

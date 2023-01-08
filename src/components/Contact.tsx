@@ -120,7 +120,7 @@ const Contact = () => {
                         <input
                           type="text"
                           value={formDetails.firstName}
-                          placeholder="First Name"
+                          placeholder="Full Name"
                           name="firstName"
                           onChange={(e) =>
                             onFormUpdate("firstName", e.target.value)
@@ -137,7 +137,7 @@ const Contact = () => {
                         <input
                           type="text"
                           value={formDetails.lastName}
-                          placeholder="Last Name"
+                          placeholder="Full Name"
                           name="lastName"
                           onChange={(e: any) =>
                             onFormUpdate("lastName", e.target.value)
