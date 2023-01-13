@@ -16,7 +16,7 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 1500);
     api()
   }, []);
 
@@ -39,7 +39,7 @@ export default function Home() {
             <meta name="title" property="og:title" content="My Portfolio Website | Anup Solanki"></meta>
             <meta property="og:type" content="website"></meta>
             <meta name="author" content="Anup Solanki"></meta>
-            <meta name="image" property="og:image" content="https://drive.google.com/file/d/1no0iLOAAbOqBYpYefYrVIPa7UNqkTe6M/view?usp=share_link"></meta>
+            <meta name="image" property="og:image" content="https://i.ibb.co/gM4Xq3P/anupportimg.png"></meta>
             <meta name="description" property="og:description" content=""></meta>
           </Head>
           <Header />
