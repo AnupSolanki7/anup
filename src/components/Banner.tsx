@@ -42,7 +42,7 @@ const Banner = () => {
                       repeat={Infinity} // Repeat this Animation Sequence infinitely
                     />
                   <p>
-                    An Aspiring FrontEnd Web Developer
+                    An Aspiring FrontEnd Web Developer, With a keen Aim for Creating Fluid & Engaging User Experience Website and Web Application.  
                   </p>
                   <a href="#contactUs">
                     <button className="rainbow-text-light">
