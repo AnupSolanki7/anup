@@ -119,6 +119,7 @@ nav.navbar.scrolled {
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
+  position: relative;
   font-weight: 400;
   color: #fff !important;
   letter-spacing: 0.8px;
@@ -132,6 +133,30 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active:hover {
   opacity: 1;
 }
 
+.navbar-nav .active::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  width: 20px;
+  height: 2px;
+  transition: all 0.5s ease;
+}
+
+
+.navbar-link::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  width: 0px;
+  height: 2px;
+  transition: all 0.5s ease;
+}
+
+.navbar-nav .navbar-link:hover::before{
+  width: 40px;
+}
 
 span.navbar-text {
   display: flex;
