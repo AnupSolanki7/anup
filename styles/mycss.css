@@ -63,6 +63,13 @@ ul {
   text-decoration: none;
 }
 
+.loader-screen{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -343,7 +350,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: inline-block;
 }
 .banner h1 {
-  font-size: 55px;
+  font-size: 50px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -391,6 +398,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   100% {
     transform: translateY(-20px);
   }
+}
+
+.rainbow-text-white{
+  background: conic-gradient( #00ffa7 16.666%, #E16541 16.666%, #b6f100 33.333%, #00ff82 33.333%, #ffffff 50%, #8B9862 50%, #dfff7a 66.666%, #7da504 66.666%, #00f7e2 83.333%, #ffb9f6 83.333%);
+  
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  
+  /* Animate the text when loading the element. */
+  /* This animates it on page load and when hovering out. */
+  animation: rainbow-text-animation-rev 0.5s ease forwards;
+
+  cursor: pointer;
 }
 
 .rainbow-text-light {
@@ -453,6 +475,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   animation: rainbow-text-animation 0.5s ease forwards;
 }
 .rainbow-text-light:hover {
+  animation: rainbow-text-animation 0.5s ease forwards;
+}
+.rainbow-text-white:hover {
   animation: rainbow-text-animation 0.5s ease forwards;
 }
 
@@ -788,6 +813,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   align-items: center;
   justify-content: space-between;
 }
+
+.footer .break{
+  width: 100px;
+  margin: 5px 0px;
+}
+
 .new-email-bx::before {
   content: "";
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);

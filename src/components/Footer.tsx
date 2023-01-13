@@ -14,8 +14,8 @@ const Footer = () => {
             <Row className="align-items-center">
               <MailChipForm/>
               <Col className="foot-logo" size={12} sm={6}>
-               <span className="rainbow-text" >say Hello! </span> <br className="break" />
-               <span className="rainbow-text" >anupsolanki7@gmail.com</span> 
+               <span >Say Hello! </span> <hr className="break" />
+               <span className="rainbow-text-white" >anupsolanki7@gmail.com</span> 
               </Col>
               <Col size={12} sm={6} className="text-center text-sm-end">
                 <div className="social-icon">
@@ -24,7 +24,9 @@ const Footer = () => {
                   <Link href="https://www.instagram.com/anupsolanki7/"  target='_blank' rel="noreferrer"><Image src={navIcon3} alt="Icon" /></Link>
                 </div>
               </Col>
-                <p style={{textAlign:'center'}}>Copyright Anup Solanki 2023. All Rights Reserved</p>
+              <span style={{marginTop:'40px'}} ></span>
+              <hr />
+                <p style={{textAlign:'center'}}>Copyright <span className="rainbow-text-white">Anup Solanki</span>  2023.</p>
             </Row>
           </Container>
         </footer>

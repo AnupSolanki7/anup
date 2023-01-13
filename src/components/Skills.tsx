@@ -7,6 +7,7 @@ import meter3 from "../../public/javascript.svg";
 import html from "../../public/html.svg";
 import css from "../../public/css.svg";
 import bootstrap from "../../public/bootstrap.svg";
+import gitHub from "../../public/githubLogo.svg";
 import antd from "../../public/antd.svg";
 import mui from "../../public/mui.svg";
 import redux from "../../public/redux.svg";
@@ -104,6 +105,10 @@ const Skills = () => {
                 <div className="item">
                   <Image src={redux} alt="Image" />
                   <h5>Redux</h5>
+                </div>
+                <div className="item">
+                  <Image src={gitHub} alt="Image" />
+                  <h5>GitHub</h5>
                 </div>
               </Carousel>
             </div>

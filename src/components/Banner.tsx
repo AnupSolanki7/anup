@@ -11,6 +11,7 @@ import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 
 const Banner = () => {
+  
 
   return (
     <section className="banner" id="home">
@@ -22,7 +23,7 @@ const Banner = () => {
                 <div
                   className="text-area"
                 >
-                  <span className="tagline">Welcome to my Portfolio</span>
+                  <span className="tagline">A Journey through my Portfolio</span>
                   <h1>Hi! I'm Anup </h1>
                     <TypeAnimation
                       // Same String at the start will only be typed once, initially
@@ -36,7 +37,7 @@ const Banner = () => {
                         1000,
                       ]}
                       speed={50} // Custom Speed from 1-99 - Default Speed: 40
-                      style={{ fontSize: "55px" }}
+                      style={{ fontSize: "50px" }}
                       wrapper="h1" // Animation will be rendered as a <span>
                       repeat={Infinity} // Repeat this Animation Sequence infinitely
                     />
