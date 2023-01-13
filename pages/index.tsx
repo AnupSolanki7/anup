@@ -11,20 +11,8 @@ import Loader from "../src/components/Loader";
 import axios from "axios";
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(true);
+  
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1500);
-    api();
-  }, []);
-
-  const api = async () => {
-    const result = await axios.get("http://localhost:3000/api/hello");
-
-    console.log(result);
-  };
 
   return (
     <>
@@ -45,18 +33,12 @@ export default function Home() {
         ></meta>
         <meta name="description" property="og:description" content=""></meta>
       </Head>
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <>
-          <Header />
-          <Banner />
-          <Skills />
-          <Projects />
-          <Contact />
-          <Footer />
-        </>
-      )}
+      <Header />
+      <Banner />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
     </>
   );
 }

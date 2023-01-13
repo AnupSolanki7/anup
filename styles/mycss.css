@@ -64,10 +64,14 @@ ul {
 }
 
 .loader-screen{
+  position: absolute;
+  background-color: black;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10000000;
 }
 
 a:hover {
