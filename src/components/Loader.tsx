@@ -14,7 +14,7 @@ const Loader = () => {
       />
 
       <TypeAnimation
-        sequence={["Initialize sequence.......", 1500, ""]}
+        sequence={["Initialize sequence....", 1200, ""]}
         speed={40}
         deletionSpeed={40}
         wrapper="h2"
