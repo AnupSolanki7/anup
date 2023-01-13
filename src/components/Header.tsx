@@ -104,7 +104,7 @@ const Header = () => {
             </div>
             <a href="#contactUs">
               <button className="vvd">
-                <span className="rainbow-text">Let’s Connect</span>
+                <span className="rainbow-text-light">Let’s Connect</span>
               </button>
             </a>
           </span>

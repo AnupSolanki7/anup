@@ -48,7 +48,7 @@ const Banner = () => {
                     type specimen book.
                   </p>
                   <a href="#contactUs">
-                    <button className="rainbow-text">
+                    <button className="rainbow-text-light">
                       Let’s Connect <BiRocket className="rainbow-text" size={25} />
                     </button>
                   </a>

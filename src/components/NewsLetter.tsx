@@ -37,12 +37,13 @@ const NewsLetter = ({ status, message, onValidated }: any) => {
           <Col md={6} xl={7}>
             <form onSubmit={handleSubmit}>
               <div className="new-email-bx">
-                <input
+                {/* <input
                   type="email"
                   onChange={(e) => setEmail(e.target.value)}
                   defaultValue={"Get my Résumé...."}
                   disabled
-                />
+                /> */}
+                <p style={{margin:'0px'}} >Get my Résumé....</p>
                 <Link target={'_blank'} href="https://drive.google.com/file/d/1Sd7wSfZMv5Wy-sMITC60-KDF3HU6K4Z3/view?usp=share_link">Résumé (PDF) </Link>
               </div>
             </form>

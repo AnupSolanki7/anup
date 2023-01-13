@@ -393,6 +393,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
+.rainbow-text-light {
+  /* Create a conic gradient. */
+  /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
+  background: #ca4246;
+  background-color: #CA4246;
+  background: conic-gradient( #ae36ff 16.666%, #8403f9 16.666%, #ffcebf 33.333%, #fff8bc 33.333%, #F18F43 50%, #8B9862 50%, #dff98f 66.666%, #3472ff 66.666%, #ec7fff 83.333%, #ffbdf7 83.333%);
+  /* Set thee background size and repeat properties. */
+  background-size: 57%;
+  background-repeat: repeat;
+  
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  
+  /* Animate the text when loading the element. */
+  /* This animates it on page load and when hovering out. */
+  animation: rainbow-text-animation-rev 0.5s ease forwards;
+
+  cursor: pointer;
+}
+
 .rainbow-text {
   /* Create a conic gradient. */
   /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
@@ -428,6 +450,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Add animation on hover. */
 .rainbow-text:hover {
+  animation: rainbow-text-animation 0.5s ease forwards;
+}
+.rainbow-text-light:hover {
   animation: rainbow-text-animation 0.5s ease forwards;
 }
 
@@ -820,6 +845,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 20px;
 }
 
+@media only screen and (max-width: 920px) {
+  .newsletter-bx .row{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newsletter-bx .row .col-xl-5 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .new-email-bx a{
+    padding: 15px 30px;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .new-email-bx {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media only screen and (max-width: 720px) {
   nav.navbar .navbar-brand {
     width: 80%;
@@ -907,8 +955,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 @media only screen and (max-width: 600px) {
   .foot-logo{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    text-align: center;
     margin-bottom: 15px;
+  }
+
+  .foot-logo .break{
+    display: none;
   }
   
   .new-email-bx button{
