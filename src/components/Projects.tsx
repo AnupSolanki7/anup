@@ -121,26 +121,22 @@ const Projects = () => {
                     >
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {projects.map((e, index) => {
-                            return (
                               <Col size={12} sm={6} md={4}>
                                 <Link
                                   style={{ color: "white" }}
-                                  href={e.URL}
+                                  href={"https://www.wiseskulls.com/"}
                                   target="_blank"
                                 >
                                   <div className="proj-imgbx">
                                     {/* <img src={imgUrl} /> */}
-                                    <Image src={e.imgUrl} alt="" />
+                                    <Image src={projImg1} alt="" />
                                     <div className="proj-txtx">
-                                      <h4>{e.title}</h4>
-                                      <span>{e.description}</span>
+                                      <h4>{"Applicant Tracking System"}</h4>
+                                      <span>{"Design & Development"}</span>
                                     </div>
                                   </div>
                                 </Link>
                               </Col>
-                            );
-                          })}
                         </Row>
                       </Tab.Pane>
                       {/* <Tab.Pane eventKey="second">
