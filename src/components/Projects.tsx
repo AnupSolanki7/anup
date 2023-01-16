@@ -2,71 +2,70 @@
 import React from "react";
 import Image from "next/image";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import projImg1 from "../assets/Ats.png";
-import projImg2 from "../assets/wiseSkulls.png";
-import projImg3 from "../assets/CRM.png";
-import projImg4 from "../assets/Arch.png";
-import projImg5 from "../assets/Client.png";
-import projImg6 from "../assets/sg.png";
-import projImg7 from "../assets/webWise.png";
-import projImg8 from "../assets/anupportimg.png";
+import projImg1 from "../../public/Ats.png";
+import projImg2 from "../../public/wiseSkulls.png";
+import projImg3 from "../../public/CRM.png";
+import projImg4 from "../../public/Arch.png";
+import projImg5 from "../../public/Client.png";
+import projImg6 from "../../public/sg.png";
+import projImg7 from "../../public/webWise.png";
+import projImg8 from "../../public/anupportimg.png";
 import colorSharp2 from "../../public/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
 import ProjectCard from "./ProjectCard";
 import { TypeAnimation } from "react-type-animation";
-import Link from "next/link";
 
 const Projects = () => {
-  // const projects = [
-  //   {
-  //     title: "Applicant Tracking System",
-  //     description: "Design & Development",
-  //     imgUrl: projImg1,
-  //     URL: "https://www.wiseskulls.com/",
-  //   },
-  //   {
-  //     title: "WiseSkulls ATS Client Module Application",
-  //     description: "Design & Development",
-  //     imgUrl: projImg2,
-  //     URL: "https://client.wiseskulls.com",
-  //   },
-  //   {
-  //     title: "Customer Relation Management Application",
-  //     description: "Design & Development",
-  //     imgUrl: projImg3,
-  //     URL: "https://www.wiseskulls.com/",
-  //   },
-  //   {
-  //     title: "Architectural Firm Website Template",
-  //     description: "Mobile-first Responsive Design",
-  //     imgUrl: projImg4,
-  //     URL: "https://commerce-gamma-six-33.vercel.app/",
-  //   },
-  //   {
-  //     title: "WiseSkulls ATS Client Module Application",
-  //     description: "Design & Development",
-  //     imgUrl: projImg5,
-  //     URL: "https://client.wiseskulls.com/",
-  //   },
-  //   {
-  //     title: "Solar Industry Website Template",
-  //     description: "Mobile-first Responsive Design",
-  //     imgUrl: projImg6,
-  //     URL: "https://s-g-bhagwan-group.vercel.app/",
-  //   },
-  //   {
-  //     title: "WiseSkulls Website",
-  //     description: "Mobile-first Responsive Design & Development",
-  //     imgUrl: projImg7,
-  //     URL: "https://www.wiseskulls.com/",
-  //   },
-  //   {
-  //     title: "Portfolio Website",
-  //     description: "Mobile-first Responsive Design & Development",
-  //     imgUrl: projImg8,
-  //     URL: "https://anupsolanki.com",
-  //   },
-  // ];
+  const projects = [
+    {
+      title: "Applicant Tracking System",
+      description: "Design & Development",
+      imgUrl: projImg1,
+      URL:"/"
+    },
+    {
+      title: "WiseSkulls ATS Client Module Application",
+      description: "Design & Development",
+      imgUrl: projImg2,
+      URL:"https://client.wiseskulls.com"
+    },
+    {
+      title: "Customer Relation Management Application",
+      description: "Design & Development",
+      imgUrl: projImg3,
+      URL:"/"
+    },
+    {
+      title: "Architectural Firm Website Template",
+      description: "Mobile-first Responsive Design",
+      imgUrl: projImg4,
+      URL:"https://commerce-gamma-six-33.vercel.app/"
+    },
+    {
+      title: "WiseSkulls ATS Client Module Application",
+      description: "Design & Development",
+      imgUrl: projImg5,
+      URL:"https://client.wiseskulls.com/"
+    },
+    {
+      title: "Solar Industry Website Template",
+      description: "Mobile-first Responsive Design",
+      imgUrl: projImg6,
+      URL:"https://s-g-bhagwan-group.vercel.app/"
+    },
+    {
+      title: "WiseSkulls Website",
+      description: "Mobile-first Responsive Design & Development",
+      imgUrl: projImg7,
+      URL:"https://www.wiseskulls.com/"
+    },
+    {
+      title: "Portfolio Website",
+      description: "Mobile-first Responsive Design & Development",
+      imgUrl: projImg8,
+      URL:"https://anupsolanki.com"
+    },
+  ];
 
   return (
     <section className="project" id="projects">
@@ -88,14 +87,10 @@ const Projects = () => {
                     repeat={Infinity}
                   />
                   <p>
-                    Throughout my learning journey, from developing basic
-                    webPages to building complex apps. I've developed and
-                    deployed few Web Application including Customer Relationship
-                    Form and Applicant Tracking System, with captivating User
-                    Interface and minimalistic yet elegant design. Also
-                    developed enticing Responsive mobile-first website templates
-                    and for firms. here are my projects I have developed
-                    personally and with team.
+                     Throughout my learning journey, from developing basic webPages to building complex apps.
+                     I've developed and deployed few Web Application including Customer Relationship Form and Applicant Tracking System,
+                     with captivating User Interface and minimalistic yet elegant design. Also developed enticing Responsive mobile-first website templates and for firms.
+                     here are my projects I have developed personally and with team.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -121,22 +116,9 @@ const Projects = () => {
                     >
                       <Tab.Pane eventKey="first">
                         <Row>
-                              <Col size={12} sm={6} md={4}>
-                                <Link
-                                  style={{ color: "white" }}
-                                  href={"https://www.wiseskulls.com/"}
-                                  target="_blank"
-                                >
-                                  <div className="proj-imgbx">
-                                    {/* <img src={imgUrl} /> */}
-                                    <Image src={projImg1} alt="" />
-                                    <div className="proj-txtx">
-                                      <h4>{"Applicant Tracking System"}</h4>
-                                      <span>{"Design & Development"}</span>
-                                    </div>
-                                  </div>
-                                </Link>
-                              </Col>
+                          {projects.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
                         </Row>
                       </Tab.Pane>
                       {/* <Tab.Pane eventKey="second">
