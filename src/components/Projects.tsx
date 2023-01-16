@@ -17,56 +17,56 @@ import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
 
 const Projects = () => {
-  const projects = [
-    {
-      title: "Applicant Tracking System",
-      description: "Design & Development",
-      imgUrl: projImg1,
-      URL: "https://www.wiseskulls.com/",
-    },
-    {
-      title: "WiseSkulls ATS Client Module Application",
-      description: "Design & Development",
-      imgUrl: projImg2,
-      URL: "https://client.wiseskulls.com",
-    },
-    {
-      title: "Customer Relation Management Application",
-      description: "Design & Development",
-      imgUrl: projImg3,
-      URL: "https://www.wiseskulls.com/",
-    },
-    {
-      title: "Architectural Firm Website Template",
-      description: "Mobile-first Responsive Design",
-      imgUrl: projImg4,
-      URL: "https://commerce-gamma-six-33.vercel.app/",
-    },
-    {
-      title: "WiseSkulls ATS Client Module Application",
-      description: "Design & Development",
-      imgUrl: projImg5,
-      URL: "https://client.wiseskulls.com/",
-    },
-    {
-      title: "Solar Industry Website Template",
-      description: "Mobile-first Responsive Design",
-      imgUrl: projImg6,
-      URL: "https://s-g-bhagwan-group.vercel.app/",
-    },
-    {
-      title: "WiseSkulls Website",
-      description: "Mobile-first Responsive Design & Development",
-      imgUrl: projImg7,
-      URL: "https://www.wiseskulls.com/",
-    },
-    {
-      title: "Portfolio Website",
-      description: "Mobile-first Responsive Design & Development",
-      imgUrl: projImg8,
-      URL: "https://anupsolanki.com",
-    },
-  ];
+  // const projects = [
+  //   {
+  //     title: "Applicant Tracking System",
+  //     description: "Design & Development",
+  //     imgUrl: projImg1,
+  //     URL: "https://www.wiseskulls.com/",
+  //   },
+  //   {
+  //     title: "WiseSkulls ATS Client Module Application",
+  //     description: "Design & Development",
+  //     imgUrl: projImg2,
+  //     URL: "https://client.wiseskulls.com",
+  //   },
+  //   {
+  //     title: "Customer Relation Management Application",
+  //     description: "Design & Development",
+  //     imgUrl: projImg3,
+  //     URL: "https://www.wiseskulls.com/",
+  //   },
+  //   {
+  //     title: "Architectural Firm Website Template",
+  //     description: "Mobile-first Responsive Design",
+  //     imgUrl: projImg4,
+  //     URL: "https://commerce-gamma-six-33.vercel.app/",
+  //   },
+  //   {
+  //     title: "WiseSkulls ATS Client Module Application",
+  //     description: "Design & Development",
+  //     imgUrl: projImg5,
+  //     URL: "https://client.wiseskulls.com/",
+  //   },
+  //   {
+  //     title: "Solar Industry Website Template",
+  //     description: "Mobile-first Responsive Design",
+  //     imgUrl: projImg6,
+  //     URL: "https://s-g-bhagwan-group.vercel.app/",
+  //   },
+  //   {
+  //     title: "WiseSkulls Website",
+  //     description: "Mobile-first Responsive Design & Development",
+  //     imgUrl: projImg7,
+  //     URL: "https://www.wiseskulls.com/",
+  //   },
+  //   {
+  //     title: "Portfolio Website",
+  //     description: "Mobile-first Responsive Design & Development",
+  //     imgUrl: projImg8,
+  //     URL: "https://anupsolanki.com",
+  //   },
+  // ];
 
   return (
     <section className="project" id="projects">
