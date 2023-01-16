@@ -12,8 +12,8 @@ import projImg7 from "../../public/webWise.png";
 import projImg8 from "../../public/anupportimg.png";
 import colorSharp2 from "../../public/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
-import ProjectCard from "./ProjectCard";
 import { TypeAnimation } from "react-type-animation";
+import Link from "next/link";
 
 const Projects = () => {
   const projects = [
@@ -21,49 +21,49 @@ const Projects = () => {
       title: "Applicant Tracking System",
       description: "Design & Development",
       imgUrl: projImg1,
-      URL:"https://www.wiseskulls.com/"
+      URL: "https://www.wiseskulls.com/",
     },
     {
       title: "WiseSkulls ATS Client Module Application",
       description: "Design & Development",
       imgUrl: projImg2,
-      URL:"https://client.wiseskulls.com"
+      URL: "https://client.wiseskulls.com",
     },
     {
       title: "Customer Relation Management Application",
       description: "Design & Development",
       imgUrl: projImg3,
-      URL:"https://www.wiseskulls.com/"
+      URL: "https://www.wiseskulls.com/",
     },
     {
       title: "Architectural Firm Website Template",
       description: "Mobile-first Responsive Design",
       imgUrl: projImg4,
-      URL:"https://commerce-gamma-six-33.vercel.app/"
+      URL: "https://commerce-gamma-six-33.vercel.app/",
     },
     {
       title: "WiseSkulls ATS Client Module Application",
       description: "Design & Development",
       imgUrl: projImg5,
-      URL:"https://client.wiseskulls.com/"
+      URL: "https://client.wiseskulls.com/",
     },
     {
       title: "Solar Industry Website Template",
       description: "Mobile-first Responsive Design",
       imgUrl: projImg6,
-      URL:"https://s-g-bhagwan-group.vercel.app/"
+      URL: "https://s-g-bhagwan-group.vercel.app/",
     },
     {
       title: "WiseSkulls Website",
       description: "Mobile-first Responsive Design & Development",
       imgUrl: projImg7,
-      URL:"https://www.wiseskulls.com/"
+      URL: "https://www.wiseskulls.com/",
     },
     {
       title: "Portfolio Website",
       description: "Mobile-first Responsive Design & Development",
       imgUrl: projImg8,
-      URL:"https://anupsolanki.com"
+      URL: "https://anupsolanki.com",
     },
   ];
 
@@ -87,10 +87,14 @@ const Projects = () => {
                     repeat={Infinity}
                   />
                   <p>
-                     Throughout my learning journey, from developing basic webPages to building complex apps.
-                     I've developed and deployed few Web Application including Customer Relationship Form and Applicant Tracking System,
-                     with captivating User Interface and minimalistic yet elegant design. Also developed enticing Responsive mobile-first website templates and for firms.
-                     here are my projects I have developed personally and with team.
+                    Throughout my learning journey, from developing basic
+                    webPages to building complex apps. I've developed and
+                    deployed few Web Application including Customer Relationship
+                    Form and Applicant Tracking System, with captivating User
+                    Interface and minimalistic yet elegant design. Also
+                    developed enticing Responsive mobile-first website templates
+                    and for firms. here are my projects I have developed
+                    personally and with team.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -116,8 +120,27 @@ const Projects = () => {
                     >
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
+                          {projects?.map((e, index) => {
+                            console.log();
+                            
+                            return (
+                              <Col size={12} sm={6} md={4}>
+                                <Link
+                                  style={{ color: "white" }}
+                                  href={e.URL}
+                                  target="_blank"
+                                >
+                                  <div className="proj-imgbx">
+                                    {/* <img src={imgUrl} /> */}
+                                    <Image src={e.imgUrl} alt="" />
+                                    <div className="proj-txtx">
+                                      <h4>{e.title}</h4>
+                                      <span>{e.description}</span>
+                                    </div>
+                                  </div>
+                                </Link>
+                              </Col>
+                            );
                           })}
                         </Row>
                       </Tab.Pane>
