@@ -8,7 +8,6 @@ import Footer from "../src/components/Footer";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import Loader from "../src/components/Loader";
-import axios from "axios";
 
 export default function Home() {
   
