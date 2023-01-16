@@ -636,11 +636,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  width: 100%;
+  border-radius: 55px;
 }
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
-  border-radius: 0;
+  border-radius: 55px !important;
   padding: 17px 0;
   color: #fff;
   width: 100%;
@@ -656,6 +657,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   content: "";
   position: absolute;
   width: 0;
+  border-radius: 55px;
   height: 100%;
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
   top: 0;
