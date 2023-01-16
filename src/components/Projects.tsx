@@ -12,6 +12,7 @@ import projImg7 from "../../public/webWise.png";
 import projImg8 from "../../public/anupportimg.png";
 import colorSharp2 from "../../public/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
+import ProjectCard from "./ProjectCard";
 import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
 
@@ -120,9 +121,7 @@ const Projects = () => {
                     >
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {projects?.map((e, index) => {
-                            console.log();
-                            
+                          {projects.map((e, index) => {
                             return (
                               <Col size={12} sm={6} md={4}>
                                 <Link
