@@ -4,14 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 const ProjectCard = ({ title, description, imgUrl, URL }: any) => {
-  console.log(imgUrl.src);
-  
   return (
     <Col size={12} sm={6} md={4}>
       <Link style={{color:'white'}} href={URL} target="_blank">
         <div className="proj-imgbx">
           {/* <img src={imgUrl} /> */}
-          <img src={imgUrl.src} alt={imgUrl} />
+          {/* <Image src={imgUrl} alt="" /> */}
           <div className="proj-txtx">
             <h4>{title}</h4>
             <span>{description}</span>
