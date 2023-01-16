@@ -25,16 +25,16 @@ const NewsLetter = ({ status, message, onValidated }: any) => {
   return (
     <Col lg={12}>
       <div className="newsletter-bx wow slideInUp">
-        <Row style={{ justifyContent: "center", alignItems: "center" }}>
-          <Col lg={12} md={6} xl={5}>
+        <Row style={{ flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
+          <Col lg={12} md={6} xl={5} style={{width:'100%', textAlign:'center'}}>
             <h3>
-              Subscribe to our Newsletter<br></br> & Never miss latest updates
+              Available for growth Opportunities. <br></br> Get my Educational and Professional details 
             </h3>
             {status === "sending" && <Alert>Sending...</Alert>}
             {status === "error" && <Alert variant="danger">{message}</Alert>}
             {status === "success" && <Alert variant="success">{message}</Alert>}
           </Col>
-          <Col md={6} xl={7}>
+          <Col md={6} xl={7} style={{marginTop:'30px', width:'100%', display:'flex', justifyContent:'center'}}>
             <form onSubmit={handleSubmit}>
               <div className="new-email-bx">
                 {/* <input
@@ -43,7 +43,6 @@ const NewsLetter = ({ status, message, onValidated }: any) => {
                   defaultValue={"Get my Résumé...."}
                   disabled
                 /> */}
-                <p style={{margin:'0px'}} >Get my Résumé....</p>
                 <Link target={'_blank'} href="https://drive.google.com/file/d/1Sd7wSfZMv5Wy-sMITC60-KDF3HU6K4Z3/view?usp=share_link">Résumé (PDF) </Link>
               </div>
             </form>

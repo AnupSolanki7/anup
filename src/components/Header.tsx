@@ -15,7 +15,8 @@ const Header = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    document.body.style.overflow = "hidden"
+    document.body.style.overflow = "hidden";
+    document.documentElement.scrollTop = 0;
     setTimeout(() => {
       document.body.style.overflow = "auto"
       setIsLoading(false);

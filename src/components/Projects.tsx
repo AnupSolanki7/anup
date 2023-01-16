@@ -2,9 +2,14 @@
 import React from "react";
 import Image from "next/image";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import projImg1 from "../../public/project-img1.png";
-import projImg2 from "../../public/project-img2.png";
-import projImg3 from "../../public/project-img3.png";
+import projImg1 from "../../public/Ats.png";
+import projImg2 from "../../public/wiseSkulls.png";
+import projImg3 from "../../public/CRM.png";
+import projImg4 from "../../public/Arch.png";
+import projImg5 from "../../public/Client.png";
+import projImg6 from "../../public/sg.png";
+import projImg7 from "../../public/webWise.png";
+import projImg8 from "../../public/anupportimg.png";
 import colorSharp2 from "../../public/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
 import ProjectCard from "./ProjectCard";
@@ -13,19 +18,44 @@ import { TypeAnimation } from "react-type-animation";
 const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
+      title: "Applicant Tracking System",
       description: "Design & Development",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
+      title: "WiseSkulls ATS Client Module Application",
       description: "Design & Development",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
+      title: "Customer Relation Management Application",
       description: "Design & Development",
       imgUrl: projImg3,
+    },
+    {
+      title: "Architectural Firm Website Template",
+      description: "Mobile-first Responsive Design",
+      imgUrl: projImg4,
+    },
+    {
+      title: "WiseSkulls ATS Client Module Application",
+      description: "Design & Development",
+      imgUrl: projImg5,
+    },
+    {
+      title: "Solar Industry Website Template",
+      description: "Mobile-first Responsive Design",
+      imgUrl: projImg6,
+    },
+    {
+      title: "WiseSkulls Website",
+      description: "Mobile-first Responsive Design Design & Development",
+      imgUrl: projImg7,
+    },
+    {
+      title: "Portfolio Website",
+      description: "Mobile-first Responsive Design Design & Development Design & Development",
+      imgUrl: projImg8,
     },
   ];
 
@@ -49,11 +79,10 @@ const Projects = () => {
                     repeat={Infinity}
                   />
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                     Throughout my learning journey, from developing basic webPages to building complex apps.
+                     I've developed and deployed few Web Application including Customer Relationship Form and Applicant Tracking System,
+                     with captivating User Interface and minimalistic yet elegant design. Also developed enticing Responsive mobile-first website templates and for firms.
+                     here are my projects I have developed personally and with team.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -62,14 +91,14 @@ const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                        <Nav.Link eventKey="first">Thing's I've Built</Nav.Link>
                       </Nav.Item>
-                      <Nav.Item>
+                      {/* <Nav.Item>
                         <Nav.Link eventKey="second">Tab 2</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                      </Nav.Item>
+                      </Nav.Item> */}
                     </Nav>
                     <Tab.Content
                       id="slideInUp"
@@ -84,7 +113,7 @@ const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="second">
+                      {/* <Tab.Pane eventKey="second">
                         <Row>
                           {projects.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
@@ -97,7 +126,7 @@ const Projects = () => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
-                      </Tab.Pane>
+                      </Tab.Pane> */}
                     </Tab.Content>
                   </Tab.Container>
                 </div>

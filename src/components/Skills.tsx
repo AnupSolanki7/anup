@@ -10,6 +10,7 @@ import bootstrap from "../../public/bootstrap.svg";
 import gitHub from "../../public/githubLogo.svg";
 import antd from "../../public/antd.svg";
 import mui from "../../public/mui.svg";
+import TS from "../../public/typescript.svg";
 import redux from "../../public/redux.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -59,9 +60,9 @@ const Skills = () => {
                 />
               
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.<br></br> Lorem Ipsum has been the industry's standard
-                dummy text.
+                A Mechanical Engineer graduate and little experience in coding, I've self learned languages and framework and got proficient in many of them. And with ES6 and React as my backbone and creating my own project based css framework, I'm enthusiastic in learning new technologies on every aspects of life.
+                here are some of the skills i've gained in a short span from when i started. 
+                <br/> 
               </p>
               <Carousel
                 responsive={responsive}
@@ -109,6 +110,10 @@ const Skills = () => {
                 <div className="item">
                   <Image src={gitHub} alt="Image" />
                   <h5>GitHub</h5>
+                </div>
+                <div className="item">
+                  <Image src={TS} alt="Image" />
+                  <h5>TypeScript</h5>
                 </div>
               </Carousel>
             </div>
