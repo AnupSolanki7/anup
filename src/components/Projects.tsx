@@ -2,14 +2,14 @@
 import React from "react";
 import Image from "next/image";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-// import projImg1 from "../../public/Ats.png";
-// import projImg2 from "../../public/wiseSkulls.png";
-// import projImg3 from "../../public/CRM.png";
-// import projImg4 from "../../public/Arch.png";
-// import projImg5 from "../../public/Client.png";
-// import projImg6 from "../../public/sg.png";
-// import projImg7 from "../../public/webWise.png";
-// import projImg8 from "../../public/anupportimg.png";
+import projImg1 from "../assets/Ats.png";
+import projImg2 from "../assets/wiseSkulls.png";
+import projImg3 from "../assets/CRM.png";
+import projImg4 from "../assets/Arch.png";
+import projImg5 from "../assets/Client.png";
+import projImg6 from "../assets/sg.png";
+import projImg7 from "../assets/webWise.png";
+import projImg8 from "../assets/anupportimg.png";
 import colorSharp2 from "../../public/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
 import ProjectCard from "./ProjectCard";
@@ -20,49 +20,49 @@ const Projects = () => {
     {
       title: "Applicant Tracking System",
       description: "Design & Development",
-      // imgUrl: projImg1,
+      imgUrl: projImg1,
       URL:"/"
     },
     {
       title: "WiseSkulls ATS Client Module Application",
       description: "Design & Development",
-      // imgUrl: projImg2,
+      imgUrl: projImg2,
       URL:"https://client.wiseskulls.com"
     },
     {
       title: "Customer Relation Management Application",
       description: "Design & Development",
-      // imgUrl: projImg3,
+      imgUrl: projImg3,
       URL:"/"
     },
     {
       title: "Architectural Firm Website Template",
       description: "Mobile-first Responsive Design",
-      // imgUrl: projImg4,
+      imgUrl: projImg4,
       URL:"https://commerce-gamma-six-33.vercel.app/"
     },
     {
       title: "WiseSkulls ATS Client Module Application",
       description: "Design & Development",
-      // imgUrl: projImg5,
+      imgUrl: projImg5,
       URL:"https://client.wiseskulls.com/"
     },
     {
       title: "Solar Industry Website Template",
       description: "Mobile-first Responsive Design",
-      // imgUrl: projImg6,
+      imgUrl: projImg6,
       URL:"https://s-g-bhagwan-group.vercel.app/"
     },
     {
       title: "WiseSkulls Website",
       description: "Mobile-first Responsive Design & Development",
-      // imgUrl: projImg7,
+      imgUrl: projImg7,
       URL:"https://www.wiseskulls.com/"
     },
     {
       title: "Portfolio Website",
       description: "Mobile-first Responsive Design & Development",
-      // imgUrl: projImg8,
+      imgUrl: projImg8,
       URL:"https://anupsolanki.com"
     },
   ];

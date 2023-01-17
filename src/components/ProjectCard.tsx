@@ -9,7 +9,7 @@ const ProjectCard = ({ title, description, imgUrl, URL }: any) => {
       <Link style={{color:'white'}} href={URL} target="_blank">
         <div className="proj-imgbx">
           {/* <img src={imgUrl} /> */}
-          {/* <Image src={imgUrl} alt="" /> */}
+          <Image src={imgUrl} alt="" />
           <div className="proj-txtx">
             <h4>{title}</h4>
             <span>{description}</span>
