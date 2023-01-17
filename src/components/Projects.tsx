@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-// import projImg1 from "/Ats.png";
+// import projImg1 from "/Ats.PNG";
 // import projImg2 from "/wiseSkulls.png";
 // import projImg3 from "/CRM.png";
 // import projImg4 from "/Arch.png";
@@ -20,49 +20,49 @@ const Projects = () => {
     {
       title: "Applicant Tracking System",
       description: "Design & Development",
-      imgUrl: "/Ats.png",
+      imgUrl: "/Ats.PNG",
       URL:"/"
     },
     {
       title: "WiseSkulls ATS Client Module Application",
       description: "Design & Development",
-      imgUrl: "/wiseSkulls.png",
+      imgUrl: "/wiseSkulls.PNG",
       URL:"https://client.wiseskulls.com"
     },
     {
       title: "Customer Relation Management Application",
       description: "Design & Development",
-      imgUrl: "/CRM.png",
+      imgUrl: "/CRM.PNG",
       URL:"/"
     },
     {
       title: "Architectural Firm Website Template",
       description: "Mobile-first Responsive Design",
-      imgUrl: "/Arch.png",
+      imgUrl: "/Arch.PNG",
       URL:"https://commerce-gamma-six-33.vercel.app/"
     },
     {
       title: "WiseSkulls ATS Client Module Application",
       description: "Design & Development",
-      imgUrl: "/Client.png",
+      imgUrl: "/Client.PNG",
       URL:"https://client.wiseskulls.com/"
     },
     {
       title: "Solar Industry Website Template",
       description: "Mobile-first Responsive Design",
-      imgUrl: "/sg.png",
+      imgUrl: "/sg.PNG",
       URL:"https://s-g-bhagwan-group.vercel.app/"
     },
     {
       title: "WiseSkulls Website",
       description: "Mobile-first Responsive Design & Development",
-      imgUrl: "/webWise.png",
+      imgUrl: "/webWise.PNG",
       URL:"https://www.wiseskulls.com/"
     },
     {
       title: "Portfolio Website",
       description: "Mobile-first Responsive Design & Development",
-      imgUrl: "/anupportimg.png",
+      imgUrl: "/anupportimg.PNG",
       URL:"https://anupsolanki.com"
     },
   ];
