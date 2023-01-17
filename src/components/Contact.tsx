@@ -20,6 +20,7 @@ const Contact = () => {
   const [formDetails, setFormDetails]: any = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState("Send");
   const [status, setStatus]: any = useState({});
+  const [Token, setToken] = useState(null);
 
   const onFormUpdate = (category: any, value: any) => {
     setFormDetails({
@@ -30,7 +31,7 @@ const Contact = () => {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    console.log(form.current);
+    if(Token !== null){
     if (formDetails !== formInitialDetails && formDetails.email !== "") {
       setButtonText("Sending...");
       emailjs
@@ -78,16 +79,18 @@ const Contact = () => {
             console.log(error.text);
           }
         );
-
-      };
-    }
-    const handleToken = (token: any) => {
-      console.log(token);
-
-      // setForm((currentForm:any) => {
-      //   return { ...currentForm, token };
-      // });
-    };
+    }}else{setStatus({
+      success: false,
+      message: "Please Fill out the Captcha",
+    });}
+  };
+  const handleToken = (token: any) => {
+    console.log(token);
+    setToken(token);
+    // setForm((currentForm:any) => {
+    //   return { ...currentForm, token };
+    // });
+  };
 
   const handleExpire = () => {
     // setForm((currentForm:any) => {
