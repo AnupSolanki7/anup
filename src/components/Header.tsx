@@ -49,9 +49,6 @@ const Header = () => {
           <Navbar.Brand href="/">
             <Image alt="" src={Logo} />
           </Navbar.Brand>
-          {/* <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <span className="navbar-toggler-icon"></span>
-        </Navbar.Toggle> */}
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             type="button"
