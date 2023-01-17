@@ -43,7 +43,7 @@ const Banner = () => {
                     />
                   <p>
                     An Aspiring FrontEnd Web Developer, With a keen Aim for Creating Fluid & Engaging User Experience Website and Web Application.
-                    I love Coding, AstroPhysics and Football
+                    I love Coding, AstroPhysics and Football.
                   </p>
                   <a href="#projects">
                     <button className="rainbow-text-light">

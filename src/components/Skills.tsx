@@ -61,7 +61,7 @@ const Skills = () => {
               
               <p>
                 A Mechanical Engineer graduate and little experience in coding, I've self learned languages and framework and got proficient in many of them. And with ES6 and React as my backbone and creating my own project based css framework, I'm enthusiastic in learning new technologies on every aspects of life.
-                here are some of the skills i've gained in a short span from when i started. 
+                here are some of the skills I've gained in a short span from when I started. 
                 <br/> 
               </p>
               <Carousel

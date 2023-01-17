@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../../public/contact.svg";
 import Image from "next/image";
+import ReCaptchaV2 from 'react-google-recaptcha'
 import emailjs from "@emailjs/browser";
 import TrackVisibility from "react-on-screen";
 import { TypeAnimation } from "react-type-animation";
@@ -26,6 +27,7 @@ const Contact = () => {
       [category]: value,
     });
   };
+
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
@@ -105,15 +107,14 @@ const Contact = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  
-                    <TypeAnimation
-                      sequence={["Get In Touch", 1500, ""]}
-                      speed={40}
-                      deletionSpeed={40}
-                      wrapper="h2"
-                      repeat={Infinity}
-                    />
-                  
+                  <TypeAnimation
+                    sequence={["Get In Touch", 1500, ""]}
+                    speed={40}
+                    deletionSpeed={40}
+                    wrapper="h2"
+                    repeat={Infinity}
+                  />
+
                   <form ref={form} onSubmit={handleSubmit}>
                     <Row>
                       <Col size={12} sm={6} className="px-1">
@@ -182,6 +183,7 @@ const Contact = () => {
                             onFormUpdate("message", e.target.value)
                           }
                         ></textarea>
+                        <ReCaptchaV2 sitekey={"6LeVegMkAAAAAMvt0BmoPZ0tM7tBs9ahWUfXk5L_"} />
                         <button type="submit">
                           <span>{buttonText}</span>
                         </button>
