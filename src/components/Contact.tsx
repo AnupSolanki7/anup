@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../../public/contact.svg";
 import Image from "next/image";
-import ReCaptchaV2 from 'react-google-recaptcha'
+import ReCaptchaV2 from "react-google-recaptcha";
 import emailjs from "@emailjs/browser";
 import TrackVisibility from "react-on-screen";
 import { TypeAnimation } from "react-type-animation";
@@ -27,7 +27,6 @@ const Contact = () => {
       [category]: value,
     });
   };
-
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
@@ -79,7 +78,21 @@ const Contact = () => {
             console.log(error.text);
           }
         );
+
+      };
     }
+    const handleToken = (token: any) => {
+      console.log(token);
+
+      // setForm((currentForm:any) => {
+      //   return { ...currentForm, token };
+      // });
+    };
+
+  const handleExpire = () => {
+    // setForm((currentForm:any) => {
+    //   return { ...currentForm, token: null };
+    // });
   };
 
   return (
@@ -183,7 +196,10 @@ const Contact = () => {
                             onFormUpdate("message", e.target.value)
                           }
                         ></textarea>
-                        <ReCaptchaV2 sitekey={"6LeVegMkAAAAAMvt0BmoPZ0tM7tBs9ahWUfXk5L_"} />
+                        <ReCaptchaV2
+                          sitekey={"6LeVegMkAAAAAMvt0BmoPZ0tM7tBs9ahWUfXk5L_"}
+                          onChange={handleToken}
+                        />
                         <button type="submit">
                           <span>{buttonText}</span>
                         </button>
