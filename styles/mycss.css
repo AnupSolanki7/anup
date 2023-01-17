@@ -27,9 +27,14 @@
   box-sizing: border-box;
 }
 
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
+}
+
+html::-webkit-scrollbar{
+  display: none;
 }
 
 body {
