@@ -8,8 +8,7 @@ const ProjectCard = ({ title, description, imgUrl, URL }: any) => {
     <Col size={12} sm={6} md={4}>
       <Link style={{color:'white'}} href={URL} target="_blank">
         <div className="proj-imgbx">
-          {/* <img src={imgUrl} /> */}
-          <Image src={imgUrl} alt="" />
+          <Image src={imgUrl} alt="" width={1900} height={1900} />
           <div className="proj-txtx">
             <h4>{title}</h4>
             <span>{description}</span>
