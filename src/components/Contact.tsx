@@ -85,7 +85,6 @@ const Contact = () => {
     });}
   };
   const handleToken = (token: any) => {
-    console.log(token);
     setToken(token);
     // setForm((currentForm:any) => {
     //   return { ...currentForm, token };
@@ -93,9 +92,7 @@ const Contact = () => {
   };
 
   const handleExpire = () => {
-    // setForm((currentForm:any) => {
-    //   return { ...currentForm, token: null };
-    // });
+    setToken(null);
   };
 
   return (
@@ -202,6 +199,7 @@ const Contact = () => {
                         <ReCaptchaV2
                           sitekey={"6LeVegMkAAAAAMvt0BmoPZ0tM7tBs9ahWUfXk5L_"}
                           onChange={handleToken}
+                          onExpired={handleExpire}
                         />
                         <button type="submit">
                           <span>{buttonText}</span>
