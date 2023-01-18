@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import { useRouter } from 'next/router'
 import Image from "next/image";
 import Logo from "../../public/AnupSolanki.svg";
 import navIcon1 from "../../public/nav-icon1.svg";
@@ -13,9 +14,10 @@ const Header = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const router = useRouter()
 
   useEffect(() => {
-    
+    router.push('/')
     document.body.style.overflow = "hidden";
     document.documentElement.scrollTop = 0;
     setTimeout(() => {
