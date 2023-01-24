@@ -21,7 +21,7 @@ const Projects = () => {
       title: "Applicant Tracking System",
       description: "Design & Development",
       imgUrl: "/Ats.PNG",
-      URL:"/"
+      URL:"https://client.wiseskulls.com"
     },
     {
       title: "WiseSkulls ATS Client Module Application",
@@ -33,7 +33,7 @@ const Projects = () => {
       title: "Customer Relation Management Application",
       description: "Design & Development",
       imgUrl: "/CRM.PNG",
-      URL:"/"
+      URL:"https://client.wiseskulls.com"
     },
     {
       title: "Architectural Firm Website Template",

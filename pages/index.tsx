@@ -10,11 +10,20 @@ import { useEffect, useState } from "react";
 import Loader from "../src/components/Loader";
 
 export default function Home() {
-  
+  const [isLoading, setIsLoading] = useState(true);
 
+  useEffect(() => {
+    document.documentElement.scrollTop = 0;
+    document.body.style.overflow = "hidden";
+    setTimeout(() => {
+      document.body.style.overflow = "auto";
+      setIsLoading(false);
+    }, 1800);
+  }, []);
 
   return (
     <>
+      {isLoading ? <Loader /> : ""}
       <Header />
       <Banner />
       <Skills />
