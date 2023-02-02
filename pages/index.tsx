@@ -10,28 +10,20 @@ import { useEffect, useState } from "react";
 import Loader from "../src/components/Loader";
 
 export default function Home() {
-  
+  const [isLoading, setIsLoading] = useState(true);
 
+  useEffect(() => {
+    document.documentElement.scrollTop = 0;
+    document.body.style.overflow = "hidden";
+    setTimeout(() => {
+      document.body.style.overflow = "auto";
+      setIsLoading(false);
+    }, 1800);
+  }, []);
 
   return (
     <>
-      <Head>
-        <title>Anup Solanki</title>
-        <link rel="shortcut icon" href="/code.ico" />
-        <meta
-          name="title"
-          property="og:title"
-          content="My Portfolio Website | Anup Solanki"
-        ></meta>
-        <meta property="og:type" content="website"></meta>
-        <meta name="author" content="Anup Solanki"></meta>
-        <meta
-          name="image"
-          property="og:image"
-          content="https://i.ibb.co/gM4Xq3P/anupportimg.png"
-        ></meta>
-        <meta name="description" property="og:description" content=""></meta>
-      </Head>
+      {isLoading ? <Loader /> : ""}
       <Header />
       <Banner />
       <Skills />

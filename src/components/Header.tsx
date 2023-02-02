@@ -1,27 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import { useRouter } from 'next/router'
 import Image from "next/image";
 import Logo from "../../public/AnupSolanki.svg";
 import navIcon1 from "../../public/nav-icon1.svg";
 import navIcon2 from "../../public/nav-icon2.svg";
 import navIcon3 from "../../public/nav-icon3.svg";
-import Loader from "./Loader";
 // import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-    document.documentElement.scrollTop = 0;
-    setTimeout(() => {
-      document.body.style.overflow = "auto"
-      setIsLoading(false);
-    }, 1800);
-  }, []);
 
   useEffect(() => {
     const onScroll = () => {
@@ -39,19 +30,23 @@ const Header = () => {
 
   const onUpdateActiveLink = (value: any) => {
     setActiveLink(value);
+    if(value === "skills"){
+      document.documentElement.scrollTop = 700;
+    }else if(value === "projects"){
+      document.documentElement.scrollTop = 1400;
+    }else{
+      document.documentElement.scrollTop = 0;
+    }
   };
 
   return (
     <>
-       {isLoading ?  <Loader /> : ''}
+       
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
             <Image alt="" src={Logo} />
           </Navbar.Brand>
-          {/* <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <span className="navbar-toggler-icon"></span>
-        </Navbar.Toggle> */}
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             type="button"
@@ -64,7 +59,6 @@ const Header = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link
-                href="#home"
                 className={
                   activeLink === "home" ? "active navbar-link" : "navbar-link"
                 }
@@ -73,7 +67,6 @@ const Header = () => {
                 Home
               </Nav.Link>
               <Nav.Link
-                href="#skills"
                 className={
                   activeLink === "skills" ? "active navbar-link" : "navbar-link"
                 }
@@ -82,7 +75,6 @@ const Header = () => {
                 Skills
               </Nav.Link>
               <Nav.Link
-                href="#projects"
                 className={
                   activeLink === "projects"
                     ? "active navbar-link"

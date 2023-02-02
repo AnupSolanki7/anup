@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../../public/contact.svg";
 import Image from "next/image";
+import ReCaptchaV2 from "react-google-recaptcha";
 import emailjs from "@emailjs/browser";
 import TrackVisibility from "react-on-screen";
 import { TypeAnimation } from "react-type-animation";
@@ -19,6 +20,7 @@ const Contact = () => {
   const [formDetails, setFormDetails]: any = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState("Send");
   const [status, setStatus]: any = useState({});
+  const [Token, setToken] = useState(null);
 
   const onFormUpdate = (category: any, value: any) => {
     setFormDetails({
@@ -29,7 +31,7 @@ const Contact = () => {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    console.log(form.current);
+    if(Token !== null){
     if (formDetails !== formInitialDetails && formDetails.email !== "") {
       setButtonText("Sending...");
       emailjs
@@ -77,7 +79,20 @@ const Contact = () => {
             console.log(error.text);
           }
         );
-    }
+    }}else{setStatus({
+      success: false,
+      message: "Please Fill out the Captcha",
+    });}
+  };
+  const handleToken = (token: any) => {
+    setToken(token);
+    // setForm((currentForm:any) => {
+    //   return { ...currentForm, token };
+    // });
+  };
+
+  const handleExpire = () => {
+    setToken(null);
   };
 
   return (
@@ -105,15 +120,14 @@ const Contact = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  
-                    <TypeAnimation
-                      sequence={["Get In Touch", 1500, ""]}
-                      speed={40}
-                      deletionSpeed={40}
-                      wrapper="h2"
-                      repeat={Infinity}
-                    />
-                  
+                  <TypeAnimation
+                    sequence={["Get In Touch", 1500, ""]}
+                    speed={40}
+                    deletionSpeed={40}
+                    wrapper="h2"
+                    repeat={Infinity}
+                  />
+
                   <form ref={form} onSubmit={handleSubmit}>
                     <Row>
                       <Col size={12} sm={6} className="px-1">
@@ -182,6 +196,11 @@ const Contact = () => {
                             onFormUpdate("message", e.target.value)
                           }
                         ></textarea>
+                        <ReCaptchaV2
+                          sitekey={"6LeVegMkAAAAAMvt0BmoPZ0tM7tBs9ahWUfXk5L_"}
+                          onChange={handleToken}
+                          onExpired={handleExpire}
+                        />
                         <button type="submit">
                           <span>{buttonText}</span>
                         </button>
