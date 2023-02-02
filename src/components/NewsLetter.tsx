@@ -25,16 +25,37 @@ const NewsLetter = ({ status, message, onValidated }: any) => {
   return (
     <Col lg={12}>
       <div className="newsletter-bx wow slideInUp">
-        <Row style={{ flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
-          <Col lg={12} md={6} xl={5} style={{width:'100%', textAlign:'center'}}>
+        <Row
+          style={{
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Col
+            lg={12}
+            md={6}
+            xl={5}
+            style={{ width: "100%", textAlign: "center" }}
+          >
             <h3>
-              Available for growth Opportunities. <br></br> Get my Educational and Professional details 
+              Available for growth Opportunities. <br></br> Get my Educational
+              and Professional details
             </h3>
             {status === "sending" && <Alert>Sending...</Alert>}
             {status === "error" && <Alert variant="danger">{message}</Alert>}
             {status === "success" && <Alert variant="success">{message}</Alert>}
           </Col>
-          <Col md={6} xl={7} style={{marginTop:'30px', width:'100%', display:'flex', justifyContent:'center'}}>
+          <Col
+            md={6}
+            xl={7}
+            style={{
+              marginTop: "30px",
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
             <form onSubmit={handleSubmit}>
               <div className="new-email-bx">
                 {/* <input
@@ -43,7 +64,12 @@ const NewsLetter = ({ status, message, onValidated }: any) => {
                   defaultValue={"Get my Résumé...."}
                   disabled
                 /> */}
-                <Link target={'_blank'} href="https://drive.google.com/file/d/1KpPchmtRtUdiwkqmwjbQDwc24vKob6Ds/view?usp=share_link">Résumé (PDF) </Link>
+                <Link
+                  target={"_blank"}
+                  href="https://drive.google.com/file/d/1KpPchmtRtUdiwkqmwjbQDwc24vKob6Ds/view?usp=share_link"
+                >
+                  Résumé (PDF){" "}
+                </Link>
               </div>
             </form>
           </Col>

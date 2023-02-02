@@ -34,6 +34,8 @@ const Header = () => {
       document.documentElement.scrollTop = 700;
     }else if(value === "projects"){
       document.documentElement.scrollTop = 1400;
+    }else if(value ==="contact"){
+      document.documentElement.scrollTop = 2600;
     }else{
       document.documentElement.scrollTop = 0;
     }
@@ -109,7 +111,7 @@ const Header = () => {
                   <Image alt="" src={navIcon3} />
                 </a>
               </div>
-              <a href="#contactUs">
+              <a onClick={() => onUpdateActiveLink("contact")}>
                 <button className="vvd">
                   <span className="rainbow-text-light">Let’s Connect</span>
                 </button>

@@ -17,16 +17,17 @@ import { TypeAnimation } from "react-type-animation";
 
 const Projects = () => {
   const projects = [
-    {
-      title: "Applicant Tracking System",
-      description: "Design & Development",
-      imgUrl: "/Ats.PNG",
-      URL:"https://client.wiseskulls.com"
-    },
+    
     {
       title: "WiseSkulls ATS Client Module Application",
       description: "Design & Development",
       imgUrl: "/wiseSkulls.PNG",
+      URL:"https://client.wiseskulls.com"
+    },
+    {
+      title: "Applicant Tracking System",
+      description: "Design & Development",
+      imgUrl: "/Ats.PNG",
       URL:"https://client.wiseskulls.com"
     },
     {
@@ -99,7 +100,7 @@ const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Thing's I've Built</Nav.Link>
+                        <Nav.Link eventKey="first">Things I've Built</Nav.Link>
                       </Nav.Item>
                       {/* <Nav.Item>
                         <Nav.Link eventKey="second">Tab 2</Nav.Link>
