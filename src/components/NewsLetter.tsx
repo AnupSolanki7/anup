@@ -43,7 +43,7 @@ const NewsLetter = ({ status, message, onValidated }: any) => {
                   defaultValue={"Get my Résumé...."}
                   disabled
                 /> */}
-                <Link target={'_blank'} href="https://drive.google.com/file/d/1Sd7wSfZMv5Wy-sMITC60-KDF3HU6K4Z3/view?usp=share_link">Résumé (PDF) </Link>
+                <Link target={'_blank'} href="https://drive.google.com/file/d/1KpPchmtRtUdiwkqmwjbQDwc24vKob6Ds/view?usp=share_link">Résumé (PDF) </Link>
               </div>
             </form>
           </Col>
