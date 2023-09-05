@@ -66,7 +66,7 @@ const NewsLetter = ({ status, message, onValidated }: any) => {
                 /> */}
                 <Link
                   target={"_blank"}
-                  href="https://drive.google.com/file/d/1KpPchmtRtUdiwkqmwjbQDwc24vKob6Ds/view?usp=share_link"
+                  href="https://drive.google.com/file/d/1oWLah9UXsDTitt0MvvpK76iYFFqkoNYP/view?usp=sharing"
                 >
                   Résumé (PDF){" "}
                 </Link>

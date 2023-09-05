@@ -17,17 +17,16 @@ import { TypeAnimation } from "react-type-animation";
 
 const Projects = () => {
   const projects = [
-    
+    {
+      title: "Benchpage",
+      description: "Design & Development",
+      imgUrl: "/benchpage.PNG",
+      URL:"https://bencho-frontend.vercel.app/"
+    },
     {
       title: "WiseSkulls ATS Client Module Application",
       description: "Design & Development",
-      imgUrl: "/wiseSkulls.PNG",
-      URL:"https://client.wiseskulls.com"
-    },
-    {
-      title: "Applicant Tracking System",
-      description: "Design & Development",
-      imgUrl: "/Ats.PNG",
+      imgUrl: "/client-module.PNG",
       URL:"https://client.wiseskulls.com"
     },
     {
@@ -37,21 +36,33 @@ const Projects = () => {
       URL:"https://client.wiseskulls.com"
     },
     {
+      title: "My-message Web Application",
+      description: "Design & Development",
+      imgUrl: "/my-message.PNG",
+      URL:"https://imessage-murex.vercel.app/"
+    },
+    {
+      title: "My-expense Web Application",
+      description: "Design & Development",
+      imgUrl: "/expense.png",
+      URL:"https://my-expense-git-main-anupsolanki7.vercel.app/"
+    },
+    {
       title: "Architectural Firm Website Template",
       description: "Mobile-first Responsive Design",
       imgUrl: "/Arch.PNG",
       URL:"https://commerce-gamma-six-33.vercel.app/"
     },
     {
-      title: "WiseSkulls ATS Client Module Application",
+      title: "HotList Application",
       description: "Design & Development",
-      imgUrl: "/Client.PNG",
+      imgUrl: "/hotlist.png",
       URL:"https://client.wiseskulls.com/"
     },
     {
-      title: "Solar Industry Website Template",
+      title: "Referral Programe",
       description: "Mobile-first Responsive Design",
-      imgUrl: "/sg.PNG",
+      imgUrl: "/referral.PNG",
       URL:"https://s-g-bhagwan-group.vercel.app/"
     },
     {
@@ -60,12 +71,12 @@ const Projects = () => {
       imgUrl: "/webWise.PNG",
       URL:"https://www.wiseskulls.com/"
     },
-    {
-      title: "Portfolio Website",
-      description: "Mobile-first Responsive Design & Development",
-      imgUrl: "/anupportimg.PNG",
-      URL:"https://anupsolanki.com"
-    },
+    // {
+    //   title: "Portfolio Website",
+    //   description: "Mobile-first Responsive Design & Development",
+    //   imgUrl: "/anupportimg.PNG",
+    //   URL:"https://anupsolanki.com"
+    // },
   ];
 
   return (
