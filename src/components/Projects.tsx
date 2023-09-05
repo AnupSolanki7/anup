@@ -20,13 +20,13 @@ const Projects = () => {
     {
       title: "Benchpage",
       description: "Design & Development",
-      imgUrl: "/benchpage.PNG",
+      imgUrl: "/benchpage.png",
       URL:"https://bencho-frontend.vercel.app/"
     },
     {
       title: "WiseSkulls ATS Client Module Application",
       description: "Design & Development",
-      imgUrl: "/client-module.PNG",
+      imgUrl: "/client-module.png",
       URL:"https://client.wiseskulls.com"
     },
     {
@@ -38,7 +38,7 @@ const Projects = () => {
     {
       title: "My-message Web Application",
       description: "Design & Development",
-      imgUrl: "/my-message.PNG",
+      imgUrl: "/my-message.png",
       URL:"https://imessage-murex.vercel.app/"
     },
     {
@@ -62,7 +62,7 @@ const Projects = () => {
     {
       title: "Referral Programe",
       description: "Mobile-first Responsive Design",
-      imgUrl: "/referral.PNG",
+      imgUrl: "/referral.png",
       URL:"https://s-g-bhagwan-group.vercel.app/"
     },
     {
